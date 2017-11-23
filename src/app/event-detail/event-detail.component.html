@@ -1,0 +1,10 @@
+<div *ngIf="selectedEvent">
+  <div><code>event details:</code> </div>
+  <h2>{{ selectedEvent.name}}</h2>
+  <div><span># </span>{{selectedEvent.number}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="selectedEvent.name" placeholder="event">
+    </label>
+  </div>
+</div>
